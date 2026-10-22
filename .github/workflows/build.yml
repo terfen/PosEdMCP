@@ -18,7 +18,9 @@ jobs:
           java-version: '17'
 
       - name: Build
-        run: gradle assembleRelease --no-daemon
+        run: |
+          gradle wrapper --gradle-version 8.14 --no-daemon
+          ./gradlew assembleRelease --no-daemon
         env:
           TERM: dumb
 
