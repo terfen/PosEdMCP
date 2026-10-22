@@ -18,7 +18,7 @@ android {
         // is loaded into every scoped process, so there is no reason to carry
         // three copies of it.
         ndk {
-            abiFilters += listOf("arm64-v8a")
+            abiFilters += listOf("arm64-v8a", "armeabi-v7a")
         }
     }
 
